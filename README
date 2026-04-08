@@ -1,0 +1,34 @@
+# Playwright Automation Framework
+
+This project is a basic QA automation framework built using Playwright and JavaScript.
+
+## Objective
+The purpose of this repository is to demonstrate hands-on experience in end-to-end UI automation testing using Playwright.
+
+## Tech Stack
+- Playwright
+- JavaScript
+- Node.js
+
+## Test Scenarios Covered
+1. Successful login
+2. Invalid login validation
+3. Add product to cart
+
+## Application Under Test
+- Sauce Demo
+
+## Browsers Covered
+- Chromium
+- Firefox
+- WebKit
+
+## How to Run
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+3. Run tests
+   npx playwright test
+4. Open HTML report
+   npx playwright show-report
