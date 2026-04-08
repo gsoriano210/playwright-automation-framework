@@ -1,34 +1,46 @@
 # Playwright Automation Framework
 
-This project is a basic QA automation framework built using Playwright and JavaScript.
+UI test automation framework built with Playwright using the Page Object Model (POM) design pattern.
 
-## Objective
-The purpose of this repository is to demonstrate hands-on experience in end-to-end UI automation testing using Playwright.
+## Project Overview
+
+This project automates end-to-end test scenarios for the SauceDemo web application.
+It includes validations for:
+
+- Login functionality
+- Inventory page
+- Cart page
+- Checkout flow
+- Negative scenarios and error validations
+
+The framework is designed to be clean, scalable, and easy to maintain.
+
+---
 
 ## Tech Stack
+
 - Playwright
 - JavaScript
 - Node.js
+- Page Object Model (POM)
 
-## Test Scenarios Covered
-1. Successful login
-2. Invalid login validation
-3. Add product to cart
+---
 
-## Application Under Test
-- Sauce Demo
+## Project Structure
 
-## Browsers Covered
-- Chromium
-- Firefox
-- WebKit
-
-## How to Run
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-3. Run tests
-   npx playwright test
-4. Open HTML report
-   npx playwright show-report
+```bash
+playwright-project/
+├── pages/
+│   ├── LoginPage.js
+│   ├── InventoryPage.js
+│   ├── CartPage.js
+│   └── CheckoutPage.js
+├── tests/
+│   ├── login.spec.js
+│   ├── inventory.spec.js
+│   └── checkout.spec.js
+├── utils/
+│   └── testData.js
+├── playwright.config.js
+├── package.json
+└── README.md
